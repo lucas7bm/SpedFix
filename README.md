@@ -8,12 +8,12 @@ As funções são:
  - Corrigir valores de Base de Cálculo maiores que o Valor de Operação (VL_BC <= VL_OP).
  - Corrigir valores de Redução da Base de Cálculo inconsistentes (VL_RED_BC = VL_OP - VL_BC).
  - Corrigir CSTs de importação usados equivocadamente (Corrige o primeiro dígito do CST de 1 para 2 e de 6 para 7).
- - Remove itens do registro 0200 não referenciados em nenhum registro posterior.
- - Remove duplicatas no registro de itens (0200) e no inventário (H010).
- - Corrige o valor do inventário (útil para ajustar inventários com valores minimamente divergentes).
+ - Remover itens do registro 0200 não referenciados em nenhum registro posterior.
+ - Remover duplicatas no registro de itens (0200) e no inventário (H010).
+ - Corrigir o valor do inventário (útil para ajustar inventários com valores minimamente divergentes).
  - Crédito do Simples Nacional: percorre os XMLs fornecidos e, se encontrados créditos do Simples Nacional, gera uma planilha de apuração e faz os lançamentos nos registros C197, aproveitando o crédito.
  - Bonificações: Sugere correções comparando os XMLs com as notas de entrada, indicando quando algum CFOP pode estar inconsistente.
- - Contadores: atualiza e corrige os registros contadores no final do arquivo de escrituração.
+ - Registros Contadores: atualiza e corrige os registros contadores no final do arquivo de escrituração.
 
 ```pyinstaller .\SpedFix.py --onefile --noupx --noconsole -i .\icon.ico```
 
